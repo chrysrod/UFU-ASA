@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+    <html>
+
+    <head>
+        <title>Lista de disciplina</title>
+    </head>
+    <body>
+        
+        <ul>
+            {% for item in lista_disc %}
+                <li>
+                    {{ item }}
+                </li>
+            {% endfor %}
+        </ul>
+
+        <ol>
+            {% for item in dict_disc %}
+                <li>
+                    {{ item }}
+                    {{ dict_disc[item] }}
+                </li>
+            {% endfor %}
+        </ol>
+
+    </body>
+
+</html>
